@@ -9,14 +9,18 @@ body {
     padding: 0px;
 }
 
+.header, .main_content {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
 .header {
     display: flex;
     background-color: #1F2937;
     justify-content: space-between;
     align-items: center;
-    padding-left: 300px;
-    padding-right: 300px;
 }
+
 
 .header .logo {
     color: #F9FAF8;
@@ -41,7 +45,7 @@ body {
 }
 
 .main_content, .sign_content, .quote_content, .sign_content {
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 .header, .footer {
@@ -52,16 +56,23 @@ body {
     /* box-sizing: border-box; */
     display:flex;
     background-color: #1F2937;
-    justify-content: center;
+    justify-content: space-between;
     height: 400px;
     flex-shrink: 0;
     align-items: center;
 
 }
 
+.main_content .hero_image {
+    height: 230px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
 .main_content .hero_image img {
     height: 200px;
-    width: 400px;
+    width: 450px;
 }
 
 .main_content button {
@@ -73,7 +84,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     max-width: 400px;
-    gap: 8px;
+    gap: 0px;
     /* padding: 0px; */
 }
 
@@ -82,6 +93,7 @@ body {
     font-size: 48px;
     font-weight: bolder;
     padding: 0px;
+    margin-bottom: 4px;
 }
 
 .main_content .text_content .hero_text {
@@ -89,6 +101,21 @@ body {
     font-size: 18px;
     font-weight: lighter;
     padding: 0px;
+    margin-bottom: 8px;
+}
+
+.main_content .text_content button {
+    cursor: pointer;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
+.main_content .text_content button.log-in-button {
+    /* display: flex; */
+    background: #3882F6;
+    /* border-radius: 50%; */
+    border: 1px solid royalblue;
+    color: white;
 }
 
 .footer {
