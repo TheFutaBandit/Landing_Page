@@ -168,3 +168,33 @@ body {
     border: 2px solid royalblue;
     border-radius: 10%;
 }
+
+.quote_content {
+    display: flex;
+    height: 400px;
+    flex-shrink: 0;
+    background-color: #E5E7EB;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote_content .quote_text {
+    font-size: 36px;
+    color: #1f2937;
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: italic;
+    width: 800px;
+    margin-bottom: 8px;
+}
+
+.quote_content .quote_by {
+    display: flex;
+    width: 800px;
+    font-weight: 700;
+    color: #1f2937;
+    padding-right: 50px;
+    font-size: 20px;
+    justify-content: flex-end;
+}
